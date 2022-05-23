@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.tic-tac {
+    width: 100vw;
+    height: 100vh;
+    background-color: #1A2A33;
+    display: grid;
+    grid-template-columns: repeat( 3, auto);
+    justify-content: center;
+    align-content: center;
+    gap: 1rem;
+    position: relative;
+}
+
+.tic-tac .box {
+    width: 120px;
+    height: 120px;
+    background-color: #1F3641;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.tic-tac .x::before,
+.tic-tac .x::after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 79px;
+    background-color: #fff;
+}
+
+.tic-tac .x::before {
+    transform: rotate(45deg);
+}
+
+.tic-tac .x::after {
+    transform: rotate(-45deg);
+}
+
+.tic-tac .o::before,
+.tic-tac .o::after {
+    content: '';
+    position: absolute;
+    border-radius: 50%;
+}
+
+.tic-tac .o::before {
+    width: 35px;
+    height: 35px;
+    border: 1.5rem solid #F2B137;
+    background-color: #fff;
+}
+
+.Xwinning-message {
+    position: absolute;
+    background-color: #1F3540;
+    top: 40%;
+    left: 0;
+    right: 0;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.Xwinning-message.hide {
+    display: none;
+}
+
+.Xwinning-message span {
+    font-size: 14px;
+    color: #99AFBA;
+}
+
+.Xwinning-message h1 {
+    color: #30C4BD;
+    text-transform: uppercase;
+}
+
+.Xwinning-message h1 .winniner-sample {
+    color: #30C4BD;
+    font-size: 70px;
+}
+
+.Xwinning-message .btn {
+    display: flex;
+    gap: .5rem;
+}
+
+.Xwinning-message .f-btn {
+    padding: 10px;
+    background-color: #AAC0CC;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.Xwinning-message .x-btn {
+    padding: 10px;
+    background-color: #F3B43B;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.Owinning-message {
+    position: absolute;
+    background-color: #1F3540;
+    top: 40%;
+    left: 0;
+    right: 0;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.Owinning-message.hide {
+    display: none;
+}
+
+.Owinning-message span {
+    font-size: 14px;
+    color: #99AFBA;
+}
+
+.Owinning-message h1 {
+    color: #30C4BD;
+    text-transform: uppercase;
+}
+
+.Owinning-message h1 .winniner-sample {
+    color: #F2B137;
+    font-size: 70px;
+}
+
+.Owinning-message .btn {
+    display: flex;
+    gap: .5rem;
+}
+
+.Owinning-message .f-btn {
+    padding: 10px;
+    background-color: #AAC0CC;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.Owinning-message .o-btn {
+    padding: 10px;
+    background-color: #F3B43B;
+    border-radius: 10px;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.tic-tac .player-x {
+    width: 120px;
+    height: 80px;
+    background-color: #31C3BD;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.tic-tac .player-o {
+    width: 120px;
+    height: 80px;
+    background-color: #F2B137;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.tic-tac .ties {
+    width: 120px;
+    height: 80px;
+    background-color: #A8BFC9;
+    border-radius: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.tic-tac .player-o,
+.tic-tac .player-x,
+.tic-tac .ties {
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+}
+
+.tic-tac .player-o h1,
+.tic-tac .player-x h1,
+.tic-tac .ties h1 {
+    font-size: 13px;
+    text-transform: uppercase;
+    display: block;
+}
+
+.tic-tac .player-o span,
+.tic-tac .player-x span,
+.tic-tac .ties span {
+    font-weight: 700;
+    font-size: 27px;
+}
+
+.tic-tac .x-or-o {
+    width: 120px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: .8rem;
+}
+
+.tic-tac .x-or-o .fa-x {
+    color: aquamarine;
+    font-size: 30px;
+}
+
+.tic-tac .x-or-o .fa-o {
+    color: #F2B137;
+    font-size: 30px;
+}
+
+.tic-tac .turn {
+    background-color: #1F3641;
+    width: 120px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tic-tac .turn h1 {
+    color: #A8BFC9;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.tic-tac .turn .fa-o {
+    color: #F2B137;
+    font-size: 25px;
+    margin-right: .5rem;
+}
+
+.tic-tac .turn .fa-o.hide {
+    display: none;
+}
+
+.tic-tac .turn .fa-x {
+    color: aquamarine;
+    font-size: 25px;
+    margin-right: .5rem;
+}
+
+.tic-tac .turn .fa-x.hide {
+    display: none;
+}
+
+.tic-tac .restart {
+    background-color: #DBE8ED;
+    width: 110px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.tic-tac .restart .fa-arrow-rotate-right {
+    cursor: pointer;
+}
+
+@media all and (max-width: 414px) {
+    .tic-tac .player-o,
+    .tic-tac .ties,
+    .tic-tac .player-x {
+        width: 70px;
+        height: 60px;
+        border-radius: .8rem;
+    }
+    .tic-tac .player-o h1,
+    .tic-tac .ties h1,
+    .tic-tac .player-x h1 {
+        font-size: 10px;
+    }
+    .tic-tac .player-o span,
+    .tic-tac .ties span,
+    .tic-tac .player-x span {
+        font-size: 18px;
+    }
+    .tic-tac .box {
+        width: 70px;
+        height: 80px;
+    }
+    .tic-tac .x-or-o,
+    .tic-tac .turn,
+    .tic-tac .restart {
+        width: 70px;
+        height: 70px;
+    }
+    .tic-tac .restart {
+        font-size: 20px;
+        border-radius: 10px;
+    }
+    .tic-tac .turn h1 {
+        font-size: 11px;
+    }
+    .tic-tac .turn .fa-x,
+    .fa-o {
+        font-size: 20px;
+    }
+    .tic-tac .x::before,
+    .tic-tac .x::after {
+        content: '';
+        position: absolute;
+        width: 9px;
+        height: 50px;
+        background-color: #fff;
+    }
+    .tic-tac .o::before {
+        width: 20px;
+        height: 20px;
+        border: 1rem solid #F2B137;
+        background-color: #fff;
+    }
+}

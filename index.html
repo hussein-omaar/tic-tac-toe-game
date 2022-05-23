@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+
+    <title>Frontend Mentor | Todo app</title>
+
+
+</head>
+
+<body>
+
+    <div class="tic-tac">
+
+        <div class="x-or-o">
+            <i class="fa-solid fa-x"></i>
+            <i class="fa-solid fa-o"></i>
+        </div>
+        <div class="turn">
+            <i class="fa-solid fa-x hide" id="x-turn"></i>
+            <i class="fa-solid fa-o hide" id="o-turn"></i>
+            <h1>turn</h1>
+        </div>
+        <div class="restart">
+            <i class="fa-solid fa-arrow-rotate-right"></i>
+        </div>
+
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+
+        <div class="player-o">
+            <h1>player(O)</h1>
+            <span class="o-winning-times">0</span>
+
+        </div>
+        <div class="ties">
+            <h1>ties</h1>
+            <span class="tiest-counter">0</span>
+        </div>
+        <div class="player-x">
+            <h1>player(X)</h1>
+            <span class="x-winning-times">0</span>
+        </div>
+
+    </div>
+    <div class="Xwinning-message hide">
+        <span>You Won!</span>
+        <h1> <span class="winniner-sample">X</span> Takes The Round</h1>
+        <div class="btn">
+            <button class="f-btn">Quit</button>
+            <button class="x-btn">next round</button>
+
+        </div>
+
+    </div>
+    <div class="Owinning-message hide">
+        <span>You Won!</span>
+        <h1> <span class="winniner-sample">O</span> Takes The Round</h1>
+        <div class="btn">
+            <button class="f-btn">Quit</button>
+            <button class="o-btn">next round</button>
+
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
