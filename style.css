@@ -96,14 +96,6 @@
     gap: .5rem;
 }
 
-.Xwinning-message .f-btn {
-    padding: 10px;
-    background-color: #AAC0CC;
-    border-radius: 10px;
-    cursor: pointer;
-    text-transform: uppercase;
-}
-
 .Xwinning-message .x-btn {
     padding: 10px;
     background-color: #F3B43B;
@@ -150,13 +142,7 @@
     gap: .5rem;
 }
 
-.Owinning-message .f-btn {
-    padding: 10px;
-    background-color: #AAC0CC;
-    border-radius: 10px;
-    cursor: pointer;
-    text-transform: uppercase;
-}
+
 
 .Owinning-message .o-btn {
     padding: 10px;
