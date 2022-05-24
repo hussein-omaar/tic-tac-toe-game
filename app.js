@@ -111,19 +111,6 @@ function switchPlayer() {
     playerTurn = !playerTurn
 }
 
-
-function draw() {
-
-
-    for (let i = 0; i < ticTac.children.length; i++) {
-
-
-    }
-
-
-}
-
-
 function playerX() {
 
 
