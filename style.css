@@ -344,4 +344,17 @@
         border: 1rem solid #F2B137;
         background-color: #fff;
     }
+    
+     .Xwinning-message h1 {
+        font-size: 12px;
+    }
+    .Xwinning-message h1 .winniner-sample {
+        font-size: 28px;
+    }
+    .Owinning-message h1 {
+        font-size: 12px;
+    }
+    .Owinning-message h1 .winniner-sample {
+        font-size: 28px;
+    }
 }
